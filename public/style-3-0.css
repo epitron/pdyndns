@@ -1,0 +1,1168 @@
+/*
+
+Reset 1.0 and 2.0 portlets and asides.
+Remove this section when the old templates and these declarations are gone.
+
+*/
+#maincontent {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin-right: -25%;
+    }
+#maincontent ol, #maincontent ul {
+    padding-left: auto;
+    }
+.portlet, .aside {
+    clear: none;
+    float: none;
+    margin: 0;
+    }
+#portlets .portlet, div.aside {
+    background-color: inherit !important;
+    border: none;
+    margin: 0;
+    color: inherit !important;
+    padding: 0;
+    width: auto;
+    overflow: auto;
+    -moz-border-radius: 0;
+    -o-border-radius: 0;
+    -webkit-border-radius: 0;
+    -khtml-border-radius: 0;
+    font-size: inherit !important;
+    }
+#portlets .portlet h2, div.aside h2 {
+    border-bottom: none;
+    color: inherit !important;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    }
+body.tab-overview #mainarea #portlets .portlet.active h2 a,
+body.tab-overview #mainarea div#portlets div.portlet.active a {
+    background-color: inherit !important;
+    }
+body.tab-overview #mainarea #portlets .portlet.active h2 a:hover,
+body.tab-overview #mainarea div#portlets div.portlet.active a:hover {
+    background-color: inherit !important;
+    }
+body.tab-overview #mainarea #portlets .portlet.active div,
+body.tab-overview #mainarea #portlets .portlet.active ul,
+body.tab-overview #mainarea #portlets .portlet.active ul li a,
+body.tab-overview #mainarea #portlets .portlet.active ul li a:hover,
+body.tab-overview #mainarea div#portlets div.portlet.active ul,
+body.tab-overview #mainarea div#portlets div.portlet.active ul li a,
+body.tab-overview #mainarea div#portlets div.portlet.active ul li a:hover {
+    background-color: inherit !important;
+    }
+body.tab-overview #mainarea #portlets .portlet.active div {
+    border-left: none;
+    border-right: none;
+    }
+body.tab-branches #mainarea #portlets .portlet.active h2 a,
+body.tab-branches #mainarea div#portlets div.portlet.active a {
+    background-color: inherit !important;
+    }
+body.tab-branches #mainarea #portlets .portlet.active h2 a:hover,
+body.tab-branches #mainarea div#portlets div.portlet.active a:hover {
+    background-color: inherit !important;
+    }
+body.tab-branches #mainarea #portlets .portlet.active div,
+body.tab-branches #mainarea #portlets .portlet.active ul,
+body.tab-branches #mainarea #portlets .portlet.active ul li a,
+body.tab-branches #mainarea #portlets .portlet.active ul li a:hover,
+body.tab-branches #mainarea div#portlets div.portlet.active ul,
+body.tab-branches #mainarea div#portlets div.portlet.active ul li a,
+body.tab-branches #mainarea div#portlets div.portlet.active ul li a:hover {
+    background-color: inherit !important;
+    }
+body.tab-branches #mainarea #portlets .portlet.active div {
+    border-left: none;
+    border-right: none;
+    }
+body.tab-bugs #mainarea #portlets .portlet.active h2 a,
+body.tab-bugs #mainarea div#portlets div.portlet.active a {
+    background-color: inherit !important;
+    }
+body.tab-bugs #mainarea #portlets .portlet.active h2 a:hover,
+body.tab-bugs #mainarea div#portlets div.portlet.active a:hover {
+    background-color: inherit !important;
+    }
+body.tab-bugs #mainarea #portlets .portlet.active div,
+body.tab-bugs #mainarea #portlets .portlet.active ul,
+body.tab-bugs #mainarea #portlets .portlet.active ul li a,
+body.tab-bugs #mainarea #portlets .portlet.active ul li a:hover,
+body.tab-bugs #mainarea div#portlets div.portlet.active ul,
+body.tab-bugs #mainarea div#portlets div.portlet.active ul li a,
+body.tab-bugs #mainarea div#portlets div.portlet.active ul li a:hover {
+    background-color: inherit !important;
+    }
+body.tab-bugs #mainarea #portlets .portlet.active div {
+    border-left: none;
+    border-right: none;
+    }
+body.tab-specifications #mainarea #portlets .portlet.active h2 a,
+body.tab-specifications #mainarea div#portlets div.portlet.active a {
+    background-color: inherit !important;
+    }
+body.tab-specifications #mainarea #portlets .portlet.active h2 a:hover,
+body.tab-specifications #mainarea div#portlets div.portlet.active a:hover {
+    background-color: inherit !important;
+    }
+body.tab-specifications #mainarea #portlets .portlet.active div,
+body.tab-specifications #mainarea #portlets .portlet.active ul,
+body.tab-specifications #mainarea #portlets .portlet.active ul li a,
+body.tab-specifications #mainarea #portlets .portlet.active ul li a:hover,
+body.tab-specifications #mainarea div#portlets div.portlet.active ul,
+body.tab-specifications #mainarea div#portlets div.portlet.active ul li a,
+body.tab-specifications #mainarea div#portlets div.portlet.active ul li a:hover {
+    background-color: inherit !important;
+    }
+body.tab-translations #mainarea #portlets .portlet.active h2 a,
+body.tab-translations #mainarea div#portlets div.portlet.active a {
+    background-color: inherit !important;
+    }
+body.tab-translations #mainarea #portlets .portlet.active h2 a:hover,
+body.tab-translations #mainarea div#portlets div.portlet.active a:hover {
+    background-color: inherit !important;
+    }
+body.tab-translations #mainarea #portlets .portlet.active div,
+body.tab-translations #mainarea #portlets .portlet.active ul,
+body.tab-translations #mainarea #portlets .portlet.active ul li a,
+body.tab-translations #mainarea #portlets .portlet.active ul li a:hover,
+body.tab-translations #mainarea div#portlets div.portlet.active ul,
+body.tab-translations #mainarea div#portlets div.portlet.active ul li a,
+body.tab-translations #mainarea div#portlets div.portlet.active ul li a:hover {
+    background-color: inherit !important;
+    }
+body.tab-translations #mainarea #portlets .portlet.active div {
+    border-left: none;
+    border-right: none;
+    }
+body.tab-answers #mainarea #portlets .portlet.active h2 a,
+body.tab-answers #mainarea div#portlets div.portlet.active a {
+    background-color: inherit !important;
+    }
+body.tab-answers #mainarea #portlets .portlet.active h2 a:hover,
+body.tab-answers #mainarea div#portlets div.portlet.active a:hover {
+    background-color: inherit !important;
+    }
+body.tab-answers #mainarea #portlets .portlet.active div,
+body.tab-answers #mainarea #portlets .portlet.active ul,
+body.tab-answers #mainarea #portlets .portlet.active ul li a,
+body.tab-answers #mainarea #portlets .portlet.active ul li a:hover,
+body.tab-answers #mainarea div#portlets div.portlet.active ul,
+body.tab-answers #mainarea div#portlets div.portlet.active ul li a,
+body.tab-answers #mainarea div#portlets div.portlet.active ul li a:hover {
+    background-color: inherit !important;
+    }
+body.tab-answers #mainarea #portlets .portlet.active div {
+    border-left: none;
+    border-right: none;
+    }
+div.left div.portlet, div.right div.portlet {
+    border: none;
+    margin-top: 0;
+    padding-top: 0;
+    }
+div.left div.portlet {
+    border-width: 0;
+    padding: 0;
+    }
+div.right div.portlet {
+    border-width:0;
+    padding: 0;
+    }
+div.columns div.right div.portlet {
+    border: none;
+    padding: 0;
+    }
+span.nolink {
+    font-weight: bold;
+    }
+#colophon {
+    float: none;
+    }
+#globalsearch {
+  float: none;
+  display: auto;
+  font-weight: inherit;
+  margin-right: auto;
+}
+
+#globalsearch input {
+  font-size: inherit;
+}
+
+/* Page layout */
+.yui-d0 {
+    margin: 10px 20px;
+    }
+.yui-t4 .yui-b {
+    width: 21%;
+    }
+.yui-t4 .yui-main .yui-b {
+    width: auto;
+    margin-right: 24%;
+    }
+.footer {
+    clear: both;
+    margin-top: 4em;
+    padding-top: 0.5em;
+    }
+.footer .lp-arcana {
+    background: url(/@@/footer-background.png) top left repeat-x;
+    padding: 0.8em;
+    -moz-border-radius: 3px 3px 0 0;
+    -webkit-border-radius: 3px 3px 0 0;
+    -khtml-border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
+    height:2em;
+    }
+.footer .lp-arcana img {
+    vertical-align: middle;
+    }
+.footer .lp-arcana .search-icon {
+    background: url(icon-sprites) 100% -191px no-repeat;
+    }
+.footer .colophon {
+    margin: 3em 3em 1em 3em;
+    text-align: center;
+    }
+.footer .lp-branding {
+    float: left;
+    }
+.portlet-border {
+    border-top: 1px solid #EBEBEB;
+    padding: 1em 0;
+    }
+.portlet, .aside {
+    clear: both;
+    border-top: 1px solid #EBEBEB;
+    padding: 1em 0;
+    }
+.top-portlet {
+    padding: 0 0 0.5em 0;
+    margin: 0 0 1em;
+    }
+.full-page-width {
+    z-index: 10;
+    width: 131%;
+    }
+/* The content is already full width; the content should remain full width. */
+.full-page-width .full-page-width {
+    width: 100%;
+    }
+.warning.message {
+    margin-top: 17px;
+    }
+/*
+
+Use percentages when setting font-size.
+
+Pixels  Percent
+10      77
+11      85
+12      93
+13      100
+14      108
+15      116
+16      123.1
+17      131
+18      138.5
+19      146.5
+20      153.9
+21      161.6
+22      167
+23      174
+24      182
+25      189
+26      197
+
+*/
+
+/*
+
+Use the following 'application' colors for table column headings,
+app stats etc.
+
+Launchpad-Gold: #F8C300
+Answers: #3840BE
+Blueprints: #3594BB
+Bugs: #9F2B33
+Code: #D18B39
+Registry: default (i.e. black)
+Translations: #BB3A84
+
+*/
+
+strong.answers-stat {
+    color: #3840BE;
+    }
+strong.blueprints-stat {
+    color: #3594BB;
+    }
+strong.bugs-stat {
+    color: #9F2B33;
+    }
+strong.code-stat {
+    color: #D18B39;
+    }
+strong.registry-stat {
+    }
+strong.translations-stat {
+    color: #BB3A84;
+    }
+.launchpad-gold {
+    color: #F8C300;
+    }
+
+
+/* Default text presentation */
+html, body {
+    font-family: bitstream vera sans, dejavu sans, verdana, sans-serif;
+    font-size: 93%;
+    }
+body.private {
+    /* It must be obvious to the user that the context is private */
+    background: url("/@@/private-y-bg") top left repeat-y;
+    }
+h1 {
+    clear: none;
+    padding-top: 6px; /* An offset from the logo. */
+    font-size: 197%;
+    }
+h2 {
+    margin-bottom: 0.3em;
+    margin-top: 0.3em;
+    font-size: 123.1%;
+    color: #5a5a5a;
+    }
+p {
+    width: auto;
+    margin-bottom: 0.8em;
+    }
+p, li, dt, dd, blockquote {
+    max-width: 45em; /* Wrap the text before the eye gets lost. */
+    }
+pre, code, samp, tt, .console {
+  font-size: 116%;
+  margin-bottom: 0.8em;
+    }
+ol {
+       margin-left: 1.8em;
+    }
+ol li {
+       list-style: decimal outside;
+       }
+li {
+    padding-bottom: .3em;
+    }
+dt {
+    margin-bottom: .3em;
+    margin-top: 0.5em;
+    }
+dd {
+    margin-bottom: .8em;
+}
+th {
+    text-align: right;
+    }
+thead th, tr.thead th {
+    text-align: center;
+    vertical-align: bottom;
+    }
+
+form {
+    margin-bottom: 1em;
+}
+form h1 {
+    margin-bottom: 1em;
+    }
+
+form table th, form table td {
+    padding: 2px;
+    }
+form table tbody th {
+    font-weight: bold;
+    }
+input[type='image'] {
+    vertical-align: middle;
+    }
+em {
+    font-style: italic;
+    }
+strong {
+    font-weight: bold;
+    }
+
+/* Common presentations */
+div.see-all {
+    font-size: 123.1%; /* Same as a h2 */
+    text-align:right;
+    }
+span.see-all {
+    float: right;
+    }
+.see-all a {
+    padding-left: 8px;
+    background: inherit;
+    font-size: 72%;
+    text-decoration: underline;
+    }
+.rss-right {
+    background: url(/@@/rss.png) right center no-repeat;
+    }
+.logo {
+    float: left;
+    display: inline;
+    width: 64px;
+    height: 64px;
+    margin: 0 5px 0 0;
+    }
+.registered {
+    font-size: 85%;
+    color: #666;
+    font-style: italic;
+    }
+li .registered {
+    font-style: normal;
+    }
+.description {
+    clear: both;
+    font-size: 100%;
+    }
+.top-portlet .summary {
+    margin: 0 0 1em 0;
+    font-size: 138.5%;
+    }
+.main-portlet {
+    margin: 1em 0 1em 0;
+    }
+
+/* Common list presentations. */
+.bulleted {
+    margin-bottom: 0.5em;
+    }
+.bulleted li {
+    margin: 0 0 0 2em;
+    list-style-type: disc;
+    }
+.horizontal {
+    margin: 1em 0 0 0;
+    }
+.horizontal li {
+    display: inline;
+    padding: 0 1.5em 0 0;
+    }
+.table-actions:nth-child(2) {
+    /* text-align only works here because the <li> also has the
+       style display:inline.
+    */
+    text-align: right;
+    }
+.table-actions {
+    margin: 1em 0 0 0;
+    }
+.table-actions li {
+    display: inline;
+    padding: 0 1.5em 0 0;
+    }
+.subordinate {
+    margin-left: 2em;
+    }
+ol.subordinate {
+    margin-left: 4em;
+    }
+.two-column-list li,
+.two-column-list dl {
+    width: 48%;
+    float: left;
+    display: inline;
+    margin: 0 0.25em 0.75em 0;
+    }
+.two-column-list:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+dt {
+    font-weight: bold;
+    }
+.portlet dd {
+    margin-bottom: 0.5em;
+    font-size: 85%;
+    color: #484848;
+    }
+.portlet dl strong {
+    color: #000;
+    font-weight: normal;
+    }
+.application-summary {
+    font-size: 123.1%;
+}
+.search-results {
+    margin-top: 1em;
+}
+p.search-results {
+    font-size: 116%;
+}
+
+
+/* Exceptions they may be common. */
+.contributors dt strong {
+    padding-left: 1em;
+    }
+
+/* == Watermark heading styles */
+div.watermark-apps-portlet {
+    padding-bottom:1em;
+}
+div.watermark-apps-portlet img {
+    float: left;
+    margin: 0 1.5em 0 0;
+}
+div.watermark-apps-portlet h1, div.watermark-apps-portlet h2 {
+    padding-top: 0.1em;
+    margin-bottom: 0.8em;
+    color: #000000;
+    font-weight: bold;
+    clear: none;
+}
+div.watermark-apps-portlet h1 {
+    margin-bottom: 0.2em;
+    padding-top: 0;
+}
+
+/* === Application buttons === */
+/* In most pages, we present a list of six application buttons: */
+.watermark-apps-portlet li {
+    display:inline;
+    list-style-type: none;
+}
+.watermark-apps-portlet li a, .watermark-apps-portlet li span {
+    padding: 0.3em 0.5em;
+    margin-right: 0.4em;
+}
+/* The text of the first tab should align with the heading directly
+   above it */
+.watermark-apps-portlet li:first-child a, .watermark-apps-portlet li:first-child span {
+    margin-left: -0.5em;
+}
+.watermark-apps-portlet li a:link, .watermark-apps-portlet li a:visited {
+    color: #000;
+    background-color: #fff;
+    text-decoration: none;
+}
+.watermark-apps-portlet li.active a, .watermark-apps-portlet li.active span {
+    font-weight: bold;
+    color: #fff;
+    background-color: #747474;
+}
+.watermark-apps-portlet li a:hover {
+    color: #000;
+    background-color: #f3f3f3;
+}
+.watermark-apps-portlet li.disabled-tab {
+    color: #747474;
+}
+
+/* Facet menu, a.k.a. application tabs */
+.facetmenu {
+    width: 100%;
+    white-space: nowrap;
+}
+/* Registering slot */
+.registering {
+    float: right;
+    font-size: 85%;
+    color: #666;
+    position: relative;
+    top: 2em;
+}
+
+/* Side content exceptions */
+.side {
+    padding: 0.5em;
+    color: #484848;
+    }
+.side .portlet {
+    width: 90%;
+    margin: 0 auto 1em;
+    border: 1px solid #dedede;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+    padding: 0.5em;
+    color: #484848;
+    background: #fbfbfb;
+    }
+.side ul {
+    color: #484848;
+    background: #fbfbfb;
+    }
+
+.downloads li {
+    margin: 0;
+    padding: 2px 0 0;
+    font-weight: bold;
+    }
+.downloads li a {
+    display: block;
+    margin: 0;
+    border: 1px solid #4f843c;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    border-radius: 3px;
+    background: #4f843c url(/@@/bg-project-downloads.png) center right no-repeat;
+    padding: 6%;
+    padding-right: 40px;
+    color: #fff;
+    font-size: 93%;
+    }
+.downloads .version {
+    -moz-border-radius: 5px 5px 0 0;
+    -webkit-border-radius: 5px 5px 0 0;
+    -khtml-border-radius: 5px 5px 0 0;
+    border-radius: 5px 5px 0 0;
+    background: #d3e3c7;
+    padding: 0.2em 1em;
+    }
+.downloads .released {
+    margin: .3em 0 .5em 0;
+    -moz-border-radius: 0 0 5px 5px;
+    -webkit-border-radius: 0 0 5px 5px;
+    -khtml-border-radius: 0 0 5px 5px;
+    border-radius: 0 0 5px 5px;
+    background: #d3e3c7;
+    padding: 0.2em 1em;
+    }
+.downloads .alternate {
+    padding: 0 0 0 1em;
+    }
+
+ul.super-add-action {
+    margin: 0 auto 1em;
+}
+
+ul.super-add-action li {
+    padding: 0;
+}
+
+ul.super-add-action li a {
+    display: block;
+    border: 1px solid black;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    background: #4f843c url(/@@/bg-action-add) center left no-repeat;
+    border-radius: 3px;
+    padding: 6%;
+    padding-left: 45px;
+    color: #fff;
+    font-size: 108%;
+    font-weight: bold;
+    text-decoration: underline;
+    }
+
+.involvement li {
+    border-top: 1px solid #d0d0d0;
+    padding: 0;
+    font-size: 108%;
+    font-weight: bold;
+    }
+.involvement a {
+    display: block;
+    padding: 0.3em;
+    }
+.involvement a.bugs {
+    color: #b9413e;
+    background: url(/@@/bugs-arrow-right.png) right center no-repeat;
+    }
+.involvement a.answers {
+    color: #5265b2;
+    background: url(/@@/answers-arrow-right.png) right center no-repeat;
+    }
+.involvement a.translations {
+    color: #c5458e;
+    background: url(/@@/translations-arrow-right.png) right center no-repeat;
+    }
+.involvement a.code {
+    color: #d39f57;
+    background: url(/@@/code-arrow-right.png) right center no-repeat;
+    }
+.involvement a.blueprints {
+    color: #5ba4c6;
+    background: url(/@@/blueprints-arrow-right.png) right center no-repeat;
+    }
+.involvement a:hover {
+    text-decoration: none;
+    background-color: #eee;
+    }
+
+.announcements li {
+    margin-bottom: 0.5em;
+    }
+.announcements li strong,
+.announcements li a {
+    font-weight: bold;
+    }
+.latest-announcement {
+    padding: 0.5em;
+    background: #dfe5f6;
+    border-top: 1px solid #d0d0d0;
+    border-bottom: 1px solid #d0d0d0;
+    }
+.announcement .registered {
+    font-size: 93%;
+    margin-top: -2px;
+    }
+
+/* For the Latest updates portlet
+ * at https://launchpad.dev/~cprov/+archive/ppa */
+ul.latest-ppa-updates .duration, ul.latest-ppa-updates .build-details {
+    font-size: 75%;
+}
+ul.latest-ppa-updates li {
+    padding: 3px;
+    background-repeat: no-repeat;
+    background-position:right center;
+}
+/* The following could be generalised for use to the following selector:
+ * .side .portlet li.nth-child(odd)
+ * if needed. */
+ul.latest-ppa-updates li:nth-child(odd) {
+    border-top: 1px solid #dedede;
+    border-bottom: 1px solid #dedede;
+    background-color: #eeeeff;
+}
+ul.latest-ppa-updates li.FULLYBUILT {
+    background-image: url('/@@/yes');
+}
+ul.latest-ppa-updates li.FULLYBUILT_PENDING {
+    background-image: url('/@@/build-success-publishing');
+}
+ul.latest-ppa-updates li.NEEDSBUILD {
+    background-image: url('/@@/build-needed');
+}
+ul.latest-ppa-updates li.FAILEDTOBUILD {
+    background-image: url('/@@/build-failed');
+}
+ul.latest-ppa-updates li.BUILDING {
+    background-image: url('/@@/processing');
+}
+/* From nice_pre in tales.py */
+pre.wrap {
+  white-space: -moz-pre-wrap;
+  white-space: -o-pre-wrap;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* ==== Listing tables ==== */
+
+table.listing th {
+    font-weight: bold;
+}
+table.narrow-listing {
+    width: 45em;
+}
+/* ~person/+karma */
+table.cozy-listing {
+    width: 20em;
+    background-color: #fff;
+    border: 1px solid #d2d2d2;
+    border-bottom: 1px solid #d2d2d2;
+}
+table.cozy-listing td {
+    border: 1px #d2d2d2;
+    border-style: dotted none none none;
+}
+
+ul.language, li.language             {
+  list-style-image: url(/@@/language);
+  /* Disable .language sprite. */
+  background: inherit;
+}
+
+/* ==== Translations hand-made forms ==== */
+
+form.translations div.fields {
+    padding: 1em;
+}
+
+form.translations div.actions {
+    padding: 1em;
+    text-align: left;
+    clear:both;
+}
+
+form.translations input {
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+form.translations select {
+    margin-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+form.translations label {
+    padding-left: 0.5em;
+    padding-right: 1em;
+}
+
+form.translations .listbox label {
+    padding: 2px 1em 2px 2px;
+}
+
+/* Provide top-alignment for radio boxes and longer explanations
+ * without using tables.
+ *
+ * Examples:
+ *   https://translations.launchpad.dev/evolution/trunk/+pots/evolution-2.2/es/+upload
+ *   https://translations.launchpad.dev/evolution/trunk/+pots/evolution-2.2/+export
+ */
+form.translations div.alignment .content {
+    float:left;
+}
+form.translations div.alignment .selector {
+    margin-right: 0.5em;
+    float: left;
+    clear: both;
+}
+form.translations div.alignment .content label {
+    padding: 0px;
+    margin: 0px;
+    font-weight: bold;
+}
+form.translations div.alignment .secondary label {
+    font-weight: normal;
+    padding: 2px 1em 2px 2px;
+}
+
+/* Translations statistics and legend.
+ *
+ * Examples:
+ *   https://translations.launchpad.dev/ubuntu/hoary/+lang/es
+ *   https://translations.launchpad.dev/evolution/trunk/+lang/es
+ */
+
+div.translations-legend {
+    padding-top: 2em;
+    padding-bottom: 1em;
+}
+table.translation-stats td {
+    text-align:center;
+}
+table.translation-stats td.template-name {
+    text-align:left;
+}
+table.translation-stats tfoot td,
+table.translation-stats tfoot th {
+    background-color: #f7f7f7;
+    border: 0px;
+    border-top: 2px solid #d2d2d2;
+    border-bottom: 2px solid #d2d2d2;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-weight: bold;
+}
+table.translation-stats tfoot th {
+    text-align:left;
+}
+table.translation-stats tfoot td {
+    text-align:center;
+}
+
+/* Translations help links.
+ *
+ * Examples:
+ *   https://translations.launchpad.dev/ubuntu/hoary/+source/evolution/+pots/evolution-2.2/
+ *   https://translations.launchpad.dev/ubuntu/hoary/+source/evolution/+translations
+ *   https://translations.launchpad.dev/ubuntu/hoary/
+ *
+ */
+div.translation-help-links a {
+  float: right;
+}
+div.translation-help-links div {
+  clear: both;
+}
+
+
+/* Home page */
+.homepage {
+    margin: auto;
+    width: 90%;
+    max-width: 80em;
+}
+.homepage-portlet {
+    margin-bottom: 3em;
+    line-height: 140%;
+}
+.homepage-portlet h2 {
+    border-bottom: 1px solid;
+    margin-top: 2em;
+    font-size: 167%;
+    }
+.homepage-whatslaunchpad h2 {
+    font-size: 189%;
+    font-weight: bold;
+    line-height: 110%;
+    margin-bottom: 0.5em;
+}
+#homepage-whatslaunchpad ul {
+    margin-left: 1em;
+    margin-bottom: 0.5em;
+}
+#homepage-whatslaunchpad ul,
+#homepage-whatslaunchpad-tour {
+    font-size: 116%;
+    font-weight: bold;
+}
+#homepage-stats {
+    max-width: 50em;
+    margin: auto;
+    padding-top: 0.5em;
+    color: gray;
+    font-size: 83.3%
+}
+#homepage-blogposts {
+    padding-right: 4em;
+}
+#homepage-blogposts .blogdate {
+    font-size: 85%;
+    color: grey;
+}
+.homepage-blogposts-older {
+    font-weight: bold;
+}
+.homepage-getstarted h2 {
+    border-bottom: 1px solid;
+    margin-top: 1em;
+    font-size: 161%;
+    }
+#homepage-featured {
+    width: 100%;
+}
+#homepage-featured ul {
+    width: 48%;
+}
+#homepage-featured-left {
+    float: left;
+}
+#homepage-featured-right {
+    float: right;
+}
+#homepage-featured-top img {
+    float: left;
+}
+#homepage-featured-top-title {
+    height: 64px;
+    display: block;
+    margin-left: 70px;
+}
+#homepage-featured-top-title span{
+    font-size: 131%;
+    font-weight: bold;
+    position: relative;
+    top: 20px;
+}
+#homepage-featured-top-text {
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #888888;
+}
+.homepage-featured-more {
+    font-weight: bold;
+    margin-top: 2em;
+    clear: both;
+}
+.gridflow {
+    margin: 0.0em;
+    padding: 0.0em;
+}
+.gridflow ul {
+    margin: 0.5em 0.0em 0.5em 0.0em;
+    padding: 0.5em 0.0em 0.0em 0.0em;
+}
+.gridflow li {
+    display: inline;
+    margin: 0.0em;
+    padding: 0.2em;
+}
+.gridflow li span {
+    display: table-cell;
+    display: inline-table;
+    display: inline-block;
+    width: 192px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1em 1em 1em 0;
+}
+
+/* == Sprites == */
+.sprite {
+    padding: 2px 0 5px 18px;
+    line-height: 18px;
+}
+.vertical .sprite {
+    /* XXX: EdwinGrubbs 2009-10-29 bug=463032
+       The reduced padding is only necessary to prevent parts of the
+       adjacent sprites in the consolidated image from appearing
+       when the line wraps and the default font size is 16.
+    */
+    padding-bottom: 0px;
+    display: inline-block;
+    min-height: 16px;
+}
+.vertical .sprite:first-line {
+    line-height: 12px;
+}
+.sprite-after {padding: 2px 18px 0 0;}
+
+/* XXX: EdwinGrubbs 2009-07-27 bug=405476
+ * Override the .yui-picker-results style, so that the next icon
+ * in the sprite file won't appear for tall list items.
+ */
+.yui-picker-results li.sprite {
+    padding:2px 0 0 18px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.add {background:url(icon-sprites) 0 0 no-repeat;}
+.edit {background:url(icon-sprites) 0 -32px no-repeat;}
+.remove {background:url(icon-sprites) 0 -64px no-repeat;}
+.info {background:url(icon-sprites) 0 -96px no-repeat;}
+.question {background:url(icon-sprites) 0 -128px no-repeat;}
+.download-icon {background:url(icon-sprites) 0 -160px no-repeat;}
+.download {background:url(icon-sprites) 0 -160px no-repeat;}
+.search-icon {background:url(icon-sprites) 0 -187px no-repeat;}
+.no {background:url(icon-sprites) 0 -224px no-repeat;}
+.yes {background:url(icon-sprites) 0 -256px no-repeat;}
+.crowd {background:url(icon-sprites) 0 -288px no-repeat;}
+.person {background:url(icon-sprites) 0 -320px no-repeat;}
+.person-tabs {background:url(icon-sprites) 5px -314px no-repeat;}
+.person-badge {background:url(icon-sprites) 0 -352px no-repeat;}
+.team {background:url(icon-sprites) 0 -384px no-repeat;}
+.team-badge {background:url(icon-sprites) 0 -416px no-repeat;}
+.arrowRight {background:url(icon-sprites) 0 -448px no-repeat;}
+.treeCollapsed {background:url(icon-sprites) 0 -480px no-repeat;}
+.treeExpanded {background:url(icon-sprites) 0 -512px no-repeat;}
+.branch, .bzr-favicon {background:url(icon-sprites) 0 -544px no-repeat;}
+.bzr-favicon {background:url(icon-sprites) 5px -538px no-repeat;}
+.distribution {background:url(icon-sprites) 0 -576px no-repeat;}
+.package-source {background:url(icon-sprites) 0 -608px no-repeat;}
+.milestone {background:url(icon-sprites) 0 -640px no-repeat;}
+.language {background:url(icon-sprites) 0 -672px no-repeat;}
+.external-link {background:url(icon-sprites) 0 -704px no-repeat;}
+.mail {background:url(icon-sprites) 0 -736px no-repeat;}
+.cve {background:url(icon-sprites) 0 -768px no-repeat;}
+.cves {float: right; text-align: right;}
+.bug {background:url(icon-sprites) 0 -800px no-repeat;}
+.bug-critical {background:url(icon-sprites) 0 -832px no-repeat;}
+.bug-high {background:url(icon-sprites) 0 -864px no-repeat;}
+.bug-medium {background:url(icon-sprites) 0 -896px no-repeat;}
+.bug-low {background:url(icon-sprites) 0 -928px no-repeat;}
+.bug-wishlist {background:url(icon-sprites) 0 -960px no-repeat;}
+.blueprint {background:url(icon-sprites) 0 -992px no-repeat;}
+.blueprint-essential {background:url(icon-sprites) 0 -1024px no-repeat;}
+.blueprint-high {background:url(icon-sprites) 0 -1056px no-repeat;}
+.blueprint-medium {background:url(icon-sprites) 0 -1088px no-repeat;}
+.blueprint-low {background:url(icon-sprites) 0 -1120px no-repeat;}
+.blueprint-undefined {background:url(icon-sprites) 0 -1152px no-repeat;}
+.blueprint-not {background:url(icon-sprites) 0 -1184px no-repeat;}
+.rss {background:url(icon-sprites) 0 -1216px no-repeat;}
+.ubuntu-logo {background:url(icon-sprites-2) 0 0px no-repeat;}
+.person-inactive {background:url(icon-sprites-2) 0 -32px no-repeat;}
+.person-inactive-badge {background:url(icon-sprites-2) 0 -64px no-repeat;}
+.mentoring {background:url(icon-sprites-2) 0 -96px no-repeat;}
+.undecided {background:url(icon-sprites-2) 0 -128px no-repeat;}
+.error {background:url(icon-sprites-2) 0 -160px no-repeat;}
+.cancel {background:url(icon-sprites-2) 0 -192px no-repeat;}
+.confirm {background:url(icon-sprites-2) 0 -224px no-repeat;}
+.flame {background:url(icon-sprites-2) 0 -256px no-repeat;}
+.bug-undecided {background:url(icon-sprites-2) 0 -288px no-repeat;}
+.bug-remote {background:url(icon-sprites-2) 0 -320px no-repeat;}
+.bug-unknown {background:url(icon-sprites-2) 0 -352px no-repeat;}
+.bug-dupe {background:url(icon-sprites-2) 0 -384px no-repeat;}
+.bug-tracker {background:url(icon-sprites-2) 0 -416px no-repeat;}
+.package-binary {background:url(icon-sprites-2) 0 -448px no-repeat;}
+.retry {background:url(icon-sprites-2) 0 -480px no-repeat;}
+.distribution-badge {background:url(icon-sprites-2) 0 -512px no-repeat;}
+.project-badge {background:url(icon-sprites-2) 0 -544px no-repeat;}
+.project {background:url(icon-sprites-2) 0 -576px no-repeat;}
+.product-badge {background:url(icon-sprites-2) 0 -608px no-repeat;}
+.product {background:url(icon-sprites-2) 0 -640px no-repeat;}
+.read-only {background:url(icon-sprites-2) 0 -672px no-repeat;}
+.warning-icon, .security {background:url(icon-sprites-2) 0 -704px no-repeat;}
+.private {background:url(icon-sprites-2) 0 -736px no-repeat;}
+.meeting {background:url(icon-sprites-2) 0 -768px no-repeat;}
+.translate-icon {background:url(icon-sprites-2) 0 -800px no-repeat;}
+.translation-file {background:url(icon-sprites-2) 0 -832px no-repeat;}
+.translation-template {background:url(icon-sprites-2) 0 -864px no-repeat;}
+.trash-icon {background:url(icon-sprites-2) 0 -896px no-repeat;}
+.stop {background:url(icon-sprites-2) 0 -928px no-repeat;}
+.list {background:url(icon-sprites-2) 0 -992px no-repeat;}
+.bullet {background:url(icon-sprites-2) 0 -1024px no-repeat;}
+.zoom-in {background:url(icon-sprites-2) 0 -1056px no-repeat;}
+.zoom-out {background:url(icon-sprites-2) 0 -1088px no-repeat;}
+.architecture {background:url(icon-sprites-2) 0 -1120px no-repeat;}
+.ppa-icon {background:url(icon-sprites-2) 0 -1147px no-repeat;}
+.ppa-icon-inactive {background:url(icon-sprites-2) 0 -1171px no-repeat;}
+
+.bug-status-expand {background:url(icon-sprites-3) 0 -10px no-repeat;}
+.merge-proposal {
+  background:url(icon-sprites-3) 0 -46px no-repeat;
+  padding-left: 22px}
+.build-superseded {background:url(icon-sprites-3) 0 -80px no-repeat;}
+.build-sucess {background:url(icon-sprites-3) 0 -112px no-repeat;}
+.build-needed {background:url(icon-sprites-3) 0 -144px no-repeat;}
+.build-failure {background:url(icon-sprites-3) 0 -176px no-repeat;}
+.build-depwait {background:url(icon-sprites-3) 0 -208px no-repeat;}
+.arrowUp {background:url(icon-sprites-3) 0 -240px no-repeat;}
+.arrowDown {background:url(icon-sprites-3) 0 -256px no-repeat;}
+.arrowStart {background:url(icon-sprites-3) 0 -288px no-repeat;}
+.arrowEnd {background:url(icon-sprites-3) 0 -304px no-repeat;}
+.arrowTop {background:url(icon-sprites-3) 0 -328px no-repeat;}
+.arrowBottom {background:url(icon-sprites-3) 0 -356px no-repeat;}
+.arrowLeft {background:url(icon-sprites-3) 0 -384px no-repeat;}
+.bluebar {background:url(icon-sprites-3) 0 -416px repeat-x;}
+.redbar {background:url(icon-sprites-3) 0 -505px repeat-x;}
+.greenbar {background:url(icon-sprites-3) 0 -446px repeat-x;}
+.purplebar {background:url(icon-sprites-3) 0 -476px repeat-x;}
+.favorite-yes {background:url(icon-sprites-3) 0 -530px no-repeat;}
+
+/*large*/
+.large-branch {background:url(icon-sprites-large) 0 0 no-repeat;}
+.large-warning {background:url(icon-sprites-large) 0 -48px no-repeat;}
+.large-crowd {background:url(icon-sprites-large) 0 -96px no-repeat;}
+.large-download {background:url(icon-sprites-large) 0 -144px no-repeat;}
+.large-error {background:url(icon-sprites-large) 0 -144px no-repeat;}
+.large-flame {background:url(icon-sprites-large) 0 -192px no-repeat;}
+.large-download {background:url(icon-sprites-large) 0 -240px no-repeat;}
+.large-info {background:url(icon-sprites-large) 0 -288px no-repeat;}
+.large-launchpad {background:url(icon-sprites-large) 0 -336px no-repeat;}
+.large-mentoring {background:url(icon-sprites-large) 0 -384px no-repeat;}
+.large-proposal {background:url(icon-sprites-large) 0 -432px no-repeat;}
+.large-trash {background:url(icon-sprites-large) 0 -480px no-repeat;}
+.large-private {background:url(icon-sprites-large) 0 -528px no-repeat;}
+
+/*logo*/
+.logo-launchpad {background:url(icon-sprites-logo) 0 0 no-repeat;}
+.logo-distribution {background:url(icon-sprites-logo) 0 -80px no-repeat;}
+.logo-project {background:url(icon-sprites-logo) 0 -160px no-repeat;}
+.logo-product {background:url(icon-sprites-logo) 0 -240 no-repeat;}
+.logo-person {background:url(icon-sprites-logo) 0 -320 no-repeat;}
+.logo-inactive {background:url(icon-sprites-logo-2) 0 0 no-repeat;}
+.logo-team {background:url(icon-sprites-logo-2) 0 -80px no-repeat;}
+.logo-meeting {background:url(icon-sprites-logo-2) 0 -160px no-repeat;}
+.logo-flame {background:url(icon-sprites-logo-2) 0 -240 no-repeat;}
+.logo-trash {background:url(icon-sprites-logo-2) 0 -320 no-repeat;}

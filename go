@@ -1,0 +1,1 @@
+ruby dyndns-server.rb $*

@@ -1,0 +1,79 @@
+:javascript
+  function set_form(host,type,ip,ttl) {
+    $('#form_host')[0].value = host;
+    $('#form_type')[0].value = type;
+    $('#form_ip')[0].value = ip;
+    $('#form_ttl')[0].value = ttl;
+    $.scrollTo( $("#form"), 200);
+  }
+
+%h1 Domains
+
+- for domain, records in @grouped_records
+  %h2= domain || "Private"
+
+  
+  %table.listing
+  
+    - columns = [:name, :type, :content, :ttl, :last_update]
+    
+    %tbody
+      
+      %tr.highlighted
+
+        %th actions
+        
+        - for column in columns
+          %th= column.to_s
+        
+        
+      - for record in records
+      
+        %tr
+          %td.actions
+            %a{:href=>"/nic/delete?id=#{record.id}", :onclick=>"return confirm('Are you sure you want to delete #{record.name}?')"}
+              delete
+                  
+          - for column in columns
+            %td
+              - if column == :name
+                %a{:href=>"#", :onclick=>"set_form('#{record.name}','#{record.type}','#{record.content}','#{record.ttl}');return false;"}
+                  = record.name
+              - else
+                = record.send(column)
+        
+
+%br
+%br
+%br
+
+%h1 Add/Update a record
+
+%form{:action=>"/nic/update", :id=>"form"}
+
+  %table.listing{:style=>"width: auto;"}
+    %tbody
+    
+      %tr.highlighted
+        %th Host
+        %th Type
+        %th IP
+        %th TTL
+        %th
+        
+      %tr
+        %td
+          %input{:type=>"text", :name=>"host", :id=>"form_host"}
+        %td
+          %select{:name=>"type", :id=>"form_type"}
+            %option A
+            %option CNAME
+        %td
+          %input{:type=>"text", :name=>"ip", :id=>"form_ip"}
+        %td
+          %input{:type=>"text", :name=>"ttl", :size=>3, :value=>90, :id=>"form_ttl"}
+        %td
+          %input{:type=>"hidden", :name=>"redirect", :value=>"true"}
+          %input{:type=>"submit", :value=>"Update"}
+          
+                  
