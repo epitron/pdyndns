@@ -4,12 +4,20 @@
 
 Usage:
 
-  1) Start the server:
-        ruby dyndns-server.rb
-        
-Use it!
-
-
+  1) Install PowerDNS and its SQLite3 backend
+       eg: apt-get install pdns-server pdns-backend-sqlite3
+  2) Setup PowerDNS to use "pdyndns/pdns.db" as its SQLite3 database
+       (sample config files are locaed in "pdyndns/etc/powerdns")
+  3) Start the server:
+       ruby dyndns-server.rb
+       
+     OR
+     
+     Setup apache to run pdyndns (using the "passenger" gem and its apache plugin)
+       (sample config file: "pdyndns/etc/apache.conf")
+       
+  4) Use it!
+  
 
 HTTP interface:
   
