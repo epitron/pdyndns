@@ -1,5 +1,6 @@
-%w[rubygems sinatra haml db auth pp].each{|m| require m}
 __DIR__ = File.dirname(__FILE__)
+$: << __DIR__
+%w[rubygems sinatra haml db auth pp].each{|m| require m}
 
 
 ############################################################

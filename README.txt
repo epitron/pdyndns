@@ -2,7 +2,9 @@
       Power DynDNS
 ----------------------------
 
-Usage:
+Run your own DynDNS-compatible dynamic IP address service!
+
+Usage (setting up the server):
 
   1) Install PowerDNS and its SQLite3 backend
        eg: apt-get install pdns-server pdns-backend-sqlite3
@@ -18,8 +20,23 @@ Usage:
        
   4) Use it!
   
+Usage (setting up a DynDNS client):
 
-HTTP interface:
+  1) Install a dyndns client, like ddclient
+       eg: apt-get install ddclient
+  2) Configure it to use your new pdyndns server
+       (sample config file in "pdyndns/etc/ddclient.conf")
+
+Usage (just using CURL and a cron job):
+
+  1) Test if curl works:
+       curl http://username:password@awesomedomain.com/nic/update?host=me.awesomedomain.com&ip=auto
+  2) Edit your crontab so that it updates the IP every 5 minutes:
+       Run "crontab -e" then paste in:
+             */5 * * * *   curl http://username:password@awesomedomain.com/nic/update?host=me.awesomedomain.com&ip=auto
+
+
+HTTP API interface:
   
   /nic/update
   
@@ -32,6 +49,9 @@ HTTP interface:
       
     Examples:
 
+      Automatically detect the client's IP address and update domain.fake's IP:
+        /nic/update?host=domain.fake&ip=auto
+
       Update domain.fake's IP to 192.168.1.1:      
         /nic/update?hostname=domain.fake&myip=192.168.1.1
 
@@ -41,8 +61,6 @@ HTTP interface:
       Create a CNAME from src.com to dest.com, with a TTL of 10:
         /nic/update?host=src.com&ip=dest.com&type=CNAME&ttl=10
       
-      Update domain.fake's IP to whatever its current external IP is:
-        /nic/update?host=domain.fake&ip=auto
 
 
 Requires the following ruby gems:
